@@ -9,13 +9,17 @@ const determineBlindIndices = (dealerIndex, numPlayers) => {
 }
 
 const anteUpBlinds = (players, blindIndices, minBet) => {
-	const { bigBlindIndex, smallBlindIndex } = blindIndices;
-	players[bigBlindIndex].bet = minBet;
-	players[bigBlindIndex].chips = players[bigBlindIndex].chips - minBet;
-	players[smallBlindIndex].bet = minBet / 2;
-	players[smallBlindIndex].chips = players[smallBlindIndex].chips - (minBet / 2);
-		return players
-}
+	return players.map((player, index) => {
+	  if (index === blindIndices.small) {
+		player.bet = minBet / 2;
+	  } else if (index === blindIndices.big) {
+		player.bet = minBet;
+	  } else {
+		player.bet = 0;
+	  }
+	  return player;
+	});
+  };
 
 const determineMinBet = (highBet, playerChipsStack, playerBet) => {
 	const playerTotalChips = playerChipsStack + playerBet

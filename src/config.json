@@ -1,0 +1,18 @@
+{
+    "db": {
+      "user": "poker_admin",
+      "host": "192.168.1.112",
+      "database": "postgres",
+      "password": "bxU8suu@guy!",
+      "port": 5432
+    },
+    "email": {
+      "host": "flatearth.co.il",
+      "port": 587,
+      "user": "support@feisafe.com",
+      "pass": "1q@W3e$R"
+    },
+    "session": {
+      "secret": "bxU8suu@guy!"
+    }
+  }

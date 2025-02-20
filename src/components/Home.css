@@ -1,0 +1,28 @@
+.home-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .home-header {
+    margin-bottom: 20px;
+  }
+  
+  .home-logo {
+    height: 200px;
+    pointer-events: none;
+  }
+  
+  .home-nav {
+    margin-top: 20px;
+  }
+  
+  .nav-link {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #61dafb;
+    font-size: 20px;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
